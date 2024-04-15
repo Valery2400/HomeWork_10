@@ -35,9 +35,7 @@ const weatherForecast = (weatherCode) => {
          default:
             return"неизвестный код или замечательная погода";
         }
-
     }
         return decode(weatherCode);
-
 }
-console.log(weatherForecast("77"));
+console.log(weatherForecast("DS"));
