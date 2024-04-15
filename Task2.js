@@ -13,33 +13,33 @@
 // SS - песчаная буря (видимость менее 10 км)
 // Подсказка: удобно использовать в одном из методов switch-case:
 
-const weatherForecast = (weatherCode,decode()) => {
+const weatherForecast = (weatherCode) => {
     
     const decode =(weatherCode)=>{
         
     switch (weatherCode) {
         case SQ:
-            descriptionWeather ="шквал";
+            console.log("шквал");
         case PO:
-            descriptionWeather ="пыльный вихрь";
+            console.log("пыльный вихрь");
         case FC:
-            descriptionWeather ="торнадо";
+            console.log("торнадо");
         case BR:
-            descriptionWeather ="дымка (видимость от 1 до 9 км)";
+            console.log("дымка (видимость от 1 до 9 км)");
         case HZ:
-            descriptionWeather ="мгла (видимость менее 10 км)";
+            console.log("мгла (видимость менее 10 км)");
         case FU:
-            descriptionWeather ="дым (видимость менее 10 км)";
+            console.log("дым (видимость менее 10 км)");
         case DS:
-            descriptionWeather ="пыльная буря (видимость менее 10 км)";
+            console.log("пыльная буря (видимость менее 10 км)");
         case SS:
-            descriptionWeather ="песчаная буря (видимость менее 10 км)";
+            console.log("песчаная буря (видимость менее 10 км)");
          default:
-            descriptionWeather ="замечательная погода";
+            console.log("неизвестный код или замечательная погода");
         }
 
     }
-        return decode,descriptionWeather;
+        return decode;
 
 }
-
+weatherForecast("77")
